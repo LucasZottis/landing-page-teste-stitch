@@ -1,14 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html class="light" lang="pt-BR"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Psicólogo(a) Editorial - Espaço de Escuta e Autocuidado</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Psicólogo(a) Editorial - Espaço de Escuta e Autocuidado</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;family=Manrope:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
@@ -19,7 +29,7 @@
               "surface-container-lowest": "#ffffff",
               "on-primary-container": "#3d574c",
               "tertiary-dim": "#26606a",
-              "outline": "#81817a",
+              outline: "#81817a",
               "primary-dim": "#435e52",
               "outline-variant": "#bbb9b2",
               "tertiary-container": "#b7effb",
@@ -35,9 +45,9 @@
               "on-surface": "#383833",
               "on-secondary-fixed-variant": "#605b4d",
               "inverse-primary": "#dcfbeb",
-              "error": "#af3d3b",
+              error: "#af3d3b",
               "secondary-fixed-dim": "#dbd4c1",
-              "primary": "#4f6a5e",
+              primary: "#4f6a5e",
               "primary-container": "#cce9da",
               "surface-dim": "#e4e3da",
               "on-surface-variant": "#65655e",
@@ -45,9 +55,9 @@
               "surface-variant": "#eae8e0",
               "on-secondary-fixed": "#433f32",
               "error-dim": "#67040d",
-              "background": "#fffcf7",
+              background: "#fffcf7",
               "surface-container-highest": "#eae8e0",
-              "secondary": "#696455",
+              secondary: "#696455",
               "secondary-fixed": "#e9e2cf",
               "on-tertiary-fixed": "#034852",
               "on-secondary": "#ffffff",
@@ -56,318 +66,611 @@
               "secondary-container": "#e9e2cf",
               "primary-fixed-dim": "#bedbcd",
               "secondary-dim": "#5d584a",
-              "tertiary": "#346c77",
+              tertiary: "#346c77",
               "on-background": "#383833",
               "inverse-on-surface": "#9e9d98",
               "tertiary-fixed-dim": "#a9e0ec",
               "on-tertiary": "#ffffff",
               "on-error-container": "#6e0a12",
               "error-container": "#fa746f",
-              "surface": "#fffcf7",
-              "inverse-surface": "#0e0e0c"
+              surface: "#fffcf7",
+              "inverse-surface": "#0e0e0c",
             },
             fontFamily: {
-              "headline": ["Noto Serif"],
-              "body": ["Manrope"],
-              "label": ["Manrope"]
+              headline: ["Noto Serif"],
+              body: ["Manrope"],
+              label: ["Manrope"],
             },
-            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
           },
         },
-      }
+      };
     </script>
-<style>
+    <style>
       .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
       }
       body {
-        font-family: 'Manrope', sans-serif;
+        font-family: "Manrope", sans-serif;
         background-color: #fffcf7;
         color: #383833;
       }
-      h1, h2, h3 {
-        font-family: 'Noto Serif', serif;
+      h1,
+      h2,
+      h3 {
+        font-family: "Noto Serif", serif;
       }
     </style>
-</head>
-<body class="bg-background text-on-surface">
-<!-- TopNavBar -->
-<header class="sticky top-0 w-full z-50 bg-[#fffcf7]/80 dark:bg-[#1a1c1a]/80 backdrop-blur-md transition-all">
-<nav class="flex justify-between items-center px-10 py-6 max-w-7xl mx-auto">
-<div class="font-['Noto_Serif'] font-semibold text-xl text-[#4f6a5e] dark:text-[#8DA399]">
-                Psicólogo(a) Editorial
-            </div>
-<div class="hidden md:flex items-center gap-10">
-<a class="text-[#4f6a5e] dark:text-[#8DA399] font-bold border-b-2 border-[#4f6a5e] pb-1 font-['Noto_Serif'] text-lg tracking-tight" href="#">Sobre</a>
-<a class="text-[#65655e] dark:text-[#bbb9b2] hover:text-[#4f6a5e] transition-colors font-['Noto_Serif'] text-lg tracking-tight" href="#">Serviços</a>
-<a class="text-[#65655e] dark:text-[#bbb9b2] hover:text-[#4f6a5e] transition-colors font-['Noto_Serif'] text-lg tracking-tight" href="#">Contato</a>
-</div>
-<button class="bg-primary text-on-primary px-8 py-3 rounded-lg font-medium transition-all hover:scale-95 duration-200 ease-in-out">
+  </head>
+  <body class="bg-background text-on-surface">
+    <!-- TopNavBar -->
+    <header
+      class="sticky top-0 w-full z-50 bg-[#fffcf7]/80 dark:bg-[#1a1c1a]/80 backdrop-blur-md transition-all"
+    >
+      <nav
+        class="flex justify-between items-center px-10 py-6 max-w-7xl mx-auto"
+      >
+        <div
+          class="font-['Noto_Serif'] font-semibold text-xl text-[#4f6a5e] dark:text-[#8DA399]"
+        >
+          Tauana Evaristo Porto
+        </div>
+        <div class="hidden md:flex items-center gap-10">
+          <a
+            class="text-[#4f6a5e] dark:text-[#8DA399] font-bold border-b-2 border-[#4f6a5e] pb-1 font-['Noto_Serif'] text-lg tracking-tight"
+            href="#home-section"
+            >Início</a
+          >
+
+          <a
+            class="text-[#4f6a5e] dark:text-[#8DA399] font-bold border-[#4f6a5e] pb-1 font-['Noto_Serif'] text-lg tracking-tight"
+            href="#about-section"
+            >Sobre</a
+          >
+          <a
+            class="text-[#65655e] dark:text-[#bbb9b2] hover:text-[#4f6a5e] transition-colors font-['Noto_Serif'] text-lg tracking-tight"
+            href="#services-section"
+            >Serviços</a
+          >
+          <a
+            class="text-[#65655e] dark:text-[#bbb9b2] hover:text-[#4f6a5e] transition-colors font-['Noto_Serif'] text-lg tracking-tight"
+            href="#contact-section"
+            >Contato</a
+          >
+        </div>
+        <button
+          class="bg-primary text-on-primary px-8 py-3 rounded-lg font-medium transition-all hover:scale-95 duration-200 ease-in-out"
+        >
+          Agendar Consulta
+        </button>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section id="home-section"
+        class="relative min-h-[870px] flex items-center overflow-hidden px-6 md:px-10 bg-surface"
+      >
+        <div
+          class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center"
+        >
+          <div class="md:col-span-6 z-10">
+            <h1
+              class="text-5xl md:text-7xl font-bold leading-tight text-on-surface mb-6 tracking-tight"
+            >
+              Espaço de Escuta e Autocuidado
+            </h1>
+            <p
+              class="text-xl text-on-surface-variant mb-10 max-w-lg leading-relaxed"
+            >
+              Acolhimento profissional para sua jornada de saúde mental.
+              Atendimento presencial e online, focado em proporcionar um
+              ambiente seguro para o seu florescimento.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <button
+                class="bg-primary text-on-primary px-10 py-4 rounded-xl font-semibold shadow-lg hover:bg-primary-dim transition-all"
+              >
                 Agendar Consulta
-            </button>
-</nav>
-</header>
-<main>
-<!-- Hero Section -->
-<section class="relative min-h-[870px] flex items-center overflow-hidden px-6 md:px-10 bg-surface">
-<div class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-<div class="md:col-span-6 z-10">
-<h1 class="text-5xl md:text-7xl font-bold leading-tight text-on-surface mb-6 tracking-tight">
-                        Espaço de Escuta e Autocuidado
-                    </h1>
-<p class="text-xl text-on-surface-variant mb-10 max-w-lg leading-relaxed">
-                        Acolhimento profissional para sua jornada de saúde mental. Atendimento presencial e online, focado em proporcionar um ambiente seguro para o seu florescimento.
-                    </p>
-<div class="flex flex-col sm:flex-row gap-4">
-<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-semibold shadow-lg hover:bg-primary-dim transition-all">
-                            Agendar Consulta
-                        </button>
-<button class="px-10 py-4 rounded-xl font-semibold text-primary border border-transparent hover:border-primary-container transition-all">
-                            Saiba mais
-                        </button>
-</div>
-</div>
-<div class="md:col-span-6 relative">
-<div class="aspect-[4/5] rounded-[3rem] overflow-hidden bg-surface-container-high shadow-2xl relative">
-<img alt="Ambiente de consultório minimalista" class="w-full h-full object-cover opacity-90" data-alt="Minimalist therapy room with a comfortable olive green chair, soft natural light from a window, and lush green plants in the corner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-TXIRmF6_7wG7aIsFtFPuekMW49MODWFR_ci5cf4vnwtzOEAWlg9sAgAM4LRcAlNu8eKY8oDkrOs1NWlpRuDc3bUamUzC2AXRWj47Xn-O0LX3POnLNx9cX-X4cSDZi9aj829JGqiEtKmQmAiamuFn1NE96grGW2HLvlEookFJlJTjvyC2UG0eF2KeulBfbqnlqOQXjGLVSq5MIYROWnz2fGygsqMM-h3lM3-nY9_voNBkt0Wp_aC0D6vY4K6XuRHN0DdFL-zyVfY"/>
-<div class="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent"></div>
-</div>
-<!-- Editorial Offset Element -->
-<div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-2xl shadow-xl hidden md:block max-w-[240px]">
-<p class="italic text-on-surface-variant text-sm font-headline">"A saúde mental não é um destino, mas um processo de cuidado contínuo."</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Áreas de Atuação -->
-<section class="py-24 px-6 md:px-10 bg-surface-container-low">
-<div class="max-w-7xl mx-auto">
-<div class="mb-16 text-center md:text-left">
-<span class="text-primary font-semibold tracking-widest uppercase text-xs">Especialidades</span>
-<h2 class="text-4xl md:text-5xl mt-2 text-on-surface">Como posso te auxiliar?</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Ansiedade -->
-<div class="bg-surface-container-lowest p-10 rounded-[2rem] transition-transform hover:-translate-y-2 duration-300">
-<div class="w-14 h-14 bg-primary-container rounded-full flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-primary text-3xl">psychology</span>
-</div>
-<h3 class="text-2xl mb-4">Ansiedade</h3>
-<p class="text-on-surface-variant leading-relaxed">
-                            Desenvolvimento de ferramentas para lidar com o excesso de preocupação e reencontrar o equilíbrio emocional no cotidiano.
-                        </p>
-</div>
-<!-- Depressão -->
-<div class="bg-surface-container-lowest p-10 rounded-[2rem] transition-transform hover:-translate-y-2 duration-300 md:mt-12">
-<div class="w-14 h-14 bg-tertiary-container rounded-full flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-tertiary text-3xl">wb_sunny</span>
-</div>
-<h3 class="text-2xl mb-4">Depressão</h3>
-<p class="text-on-surface-variant leading-relaxed">
-                            Acompanhamento sensível para resgatar o sentido, a motivação e a vitalidade em um espaço livre de julgamentos.
-                        </p>
-</div>
-<!-- Autoconhecimento -->
-<div class="bg-surface-container-lowest p-10 rounded-[2rem] transition-transform hover:-translate-y-2 duration-300">
-<div class="w-14 h-14 bg-secondary-container rounded-full flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-secondary text-3xl">self_improvement</span>
-</div>
-<h3 class="text-2xl mb-4">Autoconhecimento</h3>
-<p class="text-on-surface-variant leading-relaxed">
-                            Uma jornada para compreender seus padrões, fortalecer sua identidade e fazer escolhas mais conscientes.
-                        </p>
-</div>
-</div>
-</div>
-</section>
-<!-- Sobre Mim (Editorial Style) -->
-<section class="py-32 px-6 md:px-10 bg-surface">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-<div class="relative order-2 md:order-1">
-<div class="aspect-square rounded-full border-[1.5rem] border-surface-container-high overflow-hidden shadow-inner">
-<img alt="Foto profissional da psicóloga" class="w-full h-full object-cover" data-alt="Professional portrait of a friendly female psychologist with a soft smile, wearing a beige blazer, in a brightly lit office with warm tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5Nn0g8w5-htcYZSNtH6I3WYc4VfGtX_29ibBt4YAwwrVCCgSL4nJp-xraYff6ia2DRokdipfFF9Ys4XVGkCLrI3InOHgPJkW7MgoM9yb4cpS7it1x4-_mXscQYxJ8bgAYmMZ6B3opJoTxM9GASs0SGfXLmFYF7Aj3mMLT-apCz2__NAb49RqYvSksQyVQVgJQFx_PX9WeZ40WgCHNox_Z7bbvGmx7KC0GIR-wmJBMrWAvKPbFmmmWnE2wIezXv0YuanPwmK7oAiI"/>
-</div>
-<div class="absolute top-10 -right-4 bg-primary-container p-6 rounded-2xl shadow-lg">
-<span class="text-on-primary-container font-bold text-3xl font-headline">10+</span>
-<p class="text-on-primary-container text-xs font-semibold tracking-wider uppercase">Anos de Experiência</p>
-</div>
-</div>
-<div class="order-1 md:order-2">
-<span class="text-primary font-semibold tracking-widest uppercase text-xs">Trajetória Profissional</span>
-<h2 class="text-4xl md:text-5xl mt-4 mb-8 text-on-surface">Um olhar atento sobre o ser humano</h2>
-<div class="space-y-6 text-lg text-on-surface-variant leading-relaxed">
-<p>
-                            Sou psicóloga clínica com especialização em Terapia Cognitivo-Comportamental. Minha prática é pautada na ética, na evidência científica e, acima de tudo, na humanidade.
-                        </p>
-<p>
-                            Acredito que cada pessoa carrega uma história única que merece ser ouvida com respeito e profundidade. Meu objetivo é caminhar ao seu lado no processo de descoberta de suas próprias potências.
-                        </p>
-</div>
-<div class="mt-10 grid grid-cols-2 gap-6">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">verified</span>
-<span class="text-sm font-medium">CRP Ativo</span>
-</div>
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">school</span>
-<span class="text-sm font-medium">Pós-Graduada</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Depoimentos -->
-<section class="py-24 px-6 md:px-10 bg-surface-container">
-<div class="max-w-7xl mx-auto">
-<div class="text-center mb-16">
-<h2 class="text-4xl font-bold mb-4">Relatos de quem já trilhou esse caminho</h2>
-<p class="text-on-surface-variant">O anonimato e o sigilo são sempre preservados em nossa prática.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- Card 1 -->
-<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10">
-<div class="flex text-primary mb-6">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="italic text-on-surface-variant mb-6">"Encontrei um espaço onde finalmente me senti ouvida sem julgamentos. As sessões foram fundamentais para eu recuperar minha autoconfiança."</p>
-<p class="font-semibold text-on-surface">— M.R., 34 anos</p>
-</div>
-<!-- Card 2 -->
-<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10 lg:translate-y-6">
-<div class="flex text-primary mb-6">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="italic text-on-surface-variant mb-6">"O atendimento online superou minhas expectativas. A conexão e o acolhimento são os mesmos, com a facilidade de estar no conforto da minha casa."</p>
-<p class="font-semibold text-on-surface">— J.L., 29 anos</p>
-</div>
-<!-- Card 3 -->
-<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10">
-<div class="flex text-primary mb-6">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="italic text-on-surface-variant mb-6">"Sou muito grata pelo acompanhamento durante minha crise de ansiedade. Hoje consigo identificar meus gatilhos e viver com muito mais leveza."</p>
-<p class="font-semibold text-on-surface">— A.P., 42 anos</p>
-</div>
-</div>
-</div>
-</section>
-<!-- FAQ -->
-<section class="py-24 px-6 md:px-10 bg-surface">
-<div class="max-w-4xl mx-auto">
-<h2 class="text-4xl text-center mb-16">Dúvidas Frequentes</h2>
-<div class="space-y-4">
-<details class="group bg-surface-container-low rounded-2xl p-6 transition-all">
-<summary class="flex justify-between items-center cursor-pointer list-none">
-<span class="text-xl font-medium">Como funciona a primeira sessão?</span>
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
-</summary>
-<p class="mt-4 text-on-surface-variant leading-relaxed">
-                            A primeira sessão é um momento de acolhimento e escuta inicial. Vamos conversar sobre o que te trouxe à terapia e como trabalharemos juntos para alcançar seus objetivos.
-                        </p>
-</details>
-<details class="group bg-surface-container-low rounded-2xl p-6 transition-all">
-<summary class="flex justify-between items-center cursor-pointer list-none">
-<span class="text-xl font-medium">Qual a duração e frequência das sessões?</span>
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
-</summary>
-<p class="mt-4 text-on-surface-variant leading-relaxed">
-                            As sessões têm duração média de 50 minutos. A frequência recomendada geralmente é semanal, mas pode variar conforme a necessidade e o plano terapêutico estabelecido.
-                        </p>
-</details>
-<details class="group bg-surface-container-low rounded-2xl p-6 transition-all">
-<summary class="flex justify-between items-center cursor-pointer list-none">
-<span class="text-xl font-medium">Aceita convênio médico?</span>
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
-</summary>
-<p class="mt-4 text-on-surface-variant leading-relaxed">
-                            Trabalho com atendimento particular e forneço recibo para solicitação de reembolso junto ao seu plano de saúde. Verifique as condições com sua operadora.
-                        </p>
-</details>
-</div>
-</div>
-</section>
-<!-- Localização e Contato -->
-<section class="py-24 px-6 md:px-10 bg-surface-container-low">
-<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-<div class="lg:col-span-5">
-<h2 class="text-4xl mb-8">Vamos conversar?</h2>
-<p class="text-on-surface-variant mb-10 text-lg">
-                        Sinta-se à vontade para entrar em contato para tirar dúvidas ou agendar sua primeira sessão.
-                    </p>
-<div class="space-y-8">
-<div class="flex items-start gap-6">
-<div class="bg-primary-container p-3 rounded-xl">
-<span class="material-symbols-outlined text-primary">location_on</span>
-</div>
-<div>
-<h4 class="font-bold text-lg">Endereço</h4>
-<p class="text-on-surface-variant">Av. das Orquídeas, 1234, Sala 501<br/>Jardim Botânico, São Paulo - SP</p>
-</div>
-</div>
-<div class="flex items-start gap-6">
-<div class="bg-primary-container p-3 rounded-xl">
-<span class="material-symbols-outlined text-primary">smartphone</span>
-</div>
-<div>
-<h4 class="font-bold text-lg">WhatsApp</h4>
-<p class="text-on-surface-variant">(11) 98765-4321</p>
-</div>
-</div>
-<div class="flex items-start gap-6">
-<div class="bg-primary-container p-3 rounded-xl">
-<span class="material-symbols-outlined text-primary">mail</span>
-</div>
-<div>
-<h4 class="font-bold text-lg">E-mail</h4>
-<p class="text-on-surface-variant">contato@editorialpsicologia.com.br</p>
-</div>
-</div>
-</div>
-</div>
-<div class="lg:col-span-7">
-<div class="rounded-[2.5rem] overflow-hidden shadow-xl h-[450px] relative border-8 border-surface-container-lowest">
-<!-- Simplified Map Placeholder using image -->
-<img alt="Mapa da localização" class="w-full h-full object-cover" data-alt="Stylized top-down city map in soft pastel green and beige tones, clean minimalist layout showing professional district" data-location="São Paulo, Brazil" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0eebcAMsUBeICvdVeydh_-1Vr8WNw6GGFsb5R23J351YgFRMw8EnM317aQI6FsY8KzhRp-Iu3aAy0nMBkVdOvvD_Q7_7pCSI6caQp5d-bJp4CbVfpXc6x5Emu1DDOuGLz_5s18NFK_08Ggrp29eIDiNKTCq_FgUAMUvT2Da2skSOv1sdadJQrGDB19XsyvPKDKDBRAeJuS7wRaLaP3p07PiJPKmXFJkmW_uG_EQefpYqLtPgbwM7puSNuPB7if0J4X3CwbTNd8R0"/>
-<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-<div class="relative">
-<div class="w-10 h-10 bg-primary rounded-full animate-ping absolute opacity-50"></div>
-<div class="w-10 h-10 bg-primary rounded-full relative flex items-center justify-center border-4 border-white shadow-lg">
-<span class="material-symbols-outlined text-white text-sm" style="font-variation-settings: 'FILL' 1;">location_on</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full py-12 px-10 bg-[#f6f3ec] dark:bg-[#121412]">
-<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
-<div class="font-['Noto_Serif'] italic text-lg text-[#383833] dark:text-[#fffcf7]">
-                Editorial Sanctuary
+              </button>
+              <button
+                class="px-10 py-4 rounded-xl font-semibold text-primary border border-transparent hover:border-primary-container transition-all"
+              >
+                Saiba mais
+              </button>
             </div>
-<div class="flex gap-8">
-<a class="text-[#65655e] dark:text-[#bbb9b2] hover:underline decoration-[#4f6a5e] underline-offset-4 opacity-80 hover:opacity-100 transition-opacity font-['Manrope'] text-sm tracking-wide" href="#">Privacidade</a>
-<a class="text-[#65655e] dark:text-[#bbb9b2] hover:underline decoration-[#4f6a5e] underline-offset-4 opacity-80 hover:opacity-100 transition-opacity font-['Manrope'] text-sm tracking-wide" href="#">Termos de Uso</a>
-<a class="text-[#65655e] dark:text-[#bbb9b2] hover:underline decoration-[#4f6a5e] underline-offset-4 opacity-80 hover:opacity-100 transition-opacity font-['Manrope'] text-sm tracking-wide" href="#">Instagram</a>
-<a class="text-[#65655e] dark:text-[#bbb9b2] hover:underline decoration-[#4f6a5e] underline-offset-4 opacity-80 hover:opacity-100 transition-opacity font-['Manrope'] text-sm tracking-wide" href="#">LinkedIn</a>
-</div>
-<div class="text-[#65655e] dark:text-[#bbb9b2] font-['Manrope'] text-sm tracking-wide">
-                © 2024 Editorial Sanctuary. Todos os direitos reservados.
+          </div>
+          <div class="md:col-span-6 relative">
+            <div
+              class="aspect-[4/5] rounded-[3rem] overflow-hidden bg-surface-container-high shadow-2xl relative"
+            >
+              <img
+                alt="Ambiente de consultório minimalista"
+                class="w-full h-full object-cover opacity-90"
+                data-alt="Minimalist therapy room with a comfortable olive green chair, soft natural light from a window, and lush green plants in the corner"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-TXIRmF6_7wG7aIsFtFPuekMW49MODWFR_ci5cf4vnwtzOEAWlg9sAgAM4LRcAlNu8eKY8oDkrOs1NWlpRuDc3bUamUzC2AXRWj47Xn-O0LX3POnLNx9cX-X4cSDZi9aj829JGqiEtKmQmAiamuFn1NE96grGW2HLvlEookFJlJTjvyC2UG0eF2KeulBfbqnlqOQXjGLVSq5MIYROWnz2fGygsqMM-h3lM3-nY9_voNBkt0Wp_aC0D6vY4K6XuRHN0DdFL-zyVfY"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent"
+              ></div>
             </div>
-</div>
-</footer>
-</body></html>
+            <!-- Editorial Offset Element -->
+            <div
+              class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-2xl shadow-xl hidden md:block max-w-[240px]"
+            >
+              <p class="italic text-on-surface-variant text-sm font-headline">
+                "A saúde mental não é um destino, mas um processo de cuidado
+                contínuo."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Áreas de Atuação -->
+      <section id="services-section" class="py-24 px-6 md:px-10 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto">
+          <div class="mb-16 text-center md:text-left">
+            <span
+              class="text-primary font-semibold tracking-widest uppercase text-xs"
+              >Especialidades</span
+            >
+            <h2 class="text-4xl md:text-5xl mt-2 text-on-surface">
+              Como posso te auxiliar?
+            </h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Ansiedade -->
+            <div
+              class="bg-surface-container-lowest p-10 rounded-[2rem] transition-transform hover:-translate-y-2 duration-300"
+            >
+              <div
+                class="w-14 h-14 bg-primary-container rounded-full flex items-center justify-center mb-6"
+              >
+                <span class="material-symbols-outlined text-primary text-3xl"
+                  >psychology</span
+                >
+              </div>
+              <h3 class="text-2xl mb-4">Ansiedade</h3>
+              <p class="text-on-surface-variant leading-relaxed">
+                Desenvolvimento de ferramentas para lidar com o excesso de
+                preocupação e reencontrar o equilíbrio emocional no cotidiano.
+              </p>
+            </div>
+            <!-- Depressão -->
+            <div
+              class="bg-surface-container-lowest p-10 rounded-[2rem] transition-transform hover:-translate-y-2 duration-300 md:mt-12"
+            >
+              <div
+                class="w-14 h-14 bg-tertiary-container rounded-full flex items-center justify-center mb-6"
+              >
+                <span class="material-symbols-outlined text-tertiary text-3xl"
+                  >wb_sunny</span
+                >
+              </div>
+              <h3 class="text-2xl mb-4">Depressão</h3>
+              <p class="text-on-surface-variant leading-relaxed">
+                Acompanhamento sensível para resgatar o sentido, a motivação e a
+                vitalidade em um espaço livre de julgamentos.
+              </p>
+            </div>
+            <!-- Autoconhecimento -->
+            <div
+              class="bg-surface-container-lowest p-10 rounded-[2rem] transition-transform hover:-translate-y-2 duration-300"
+            >
+              <div
+                class="w-14 h-14 bg-secondary-container rounded-full flex items-center justify-center mb-6"
+              >
+                <span class="material-symbols-outlined text-secondary text-3xl"
+                  >self_improvement</span
+                >
+              </div>
+              <h3 class="text-2xl mb-4">Autoconhecimento</h3>
+              <p class="text-on-surface-variant leading-relaxed">
+                Uma jornada para compreender seus padrões, fortalecer sua
+                identidade e fazer escolhas mais conscientes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sobre Mim (Editorial Style) -->
+      <section id="about-section" class="py-32 px-6 md:px-10 bg-surface">
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center"
+        >
+          <div class="relative order-2 md:order-1">
+            <div
+              class="aspect-square rounded-full border-[1.5rem] border-surface-container-high overflow-hidden shadow-inner"
+            >
+              <img
+                alt="Foto profissional da psicóloga"
+                class="w-full h-full object-cover"
+                data-alt="Professional portrait of a friendly female psychologist with a soft smile, wearing a beige blazer, in a brightly lit office with warm tones"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5Nn0g8w5-htcYZSNtH6I3WYc4VfGtX_29ibBt4YAwwrVCCgSL4nJp-xraYff6ia2DRokdipfFF9Ys4XVGkCLrI3InOHgPJkW7MgoM9yb4cpS7it1x4-_mXscQYxJ8bgAYmMZ6B3opJoTxM9GASs0SGfXLmFYF7Aj3mMLT-apCz2__NAb49RqYvSksQyVQVgJQFx_PX9WeZ40WgCHNox_Z7bbvGmx7KC0GIR-wmJBMrWAvKPbFmmmWnE2wIezXv0YuanPwmK7oAiI"
+              />
+            </div>
+            <div
+              class="absolute top-10 -right-4 bg-primary-container p-6 rounded-2xl shadow-lg"
+            >
+              <span
+                class="text-on-primary-container font-bold text-3xl font-headline"
+                >10+</span
+              >
+              <p
+                class="text-on-primary-container text-xs font-semibold tracking-wider uppercase"
+              >
+                Anos de Experiência
+              </p>
+            </div>
+          </div>
+          <div class="order-1 md:order-2">
+            <span
+              class="text-primary font-semibold tracking-widest uppercase text-xs"
+              >Trajetória Profissional</span
+            >
+            <h2 class="text-4xl md:text-5xl mt-4 mb-8 text-on-surface">
+              Um olhar atento sobre o ser humano
+            </h2>
+            <div
+              class="space-y-6 text-lg text-on-surface-variant leading-relaxed"
+            >
+              <p>
+                Sou psicóloga clínica com especialização em Terapia
+                Cognitivo-Comportamental. Minha prática é pautada na ética, na
+                evidência científica e, acima de tudo, na humanidade.
+              </p>
+              <p>
+                Acredito que cada pessoa carrega uma história única que merece
+                ser ouvida com respeito e profundidade. Meu objetivo é caminhar
+                ao seu lado no processo de descoberta de suas próprias
+                potências.
+              </p>
+            </div>
+            <div class="mt-10 grid grid-cols-2 gap-6">
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary"
+                  >verified</span
+                >
+                <span class="text-sm font-medium">CRP Ativo</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary"
+                  >school</span
+                >
+                <span class="text-sm font-medium">Pós-Graduada</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Depoimentos -->
+      <section class="py-24 px-6 md:px-10 bg-surface-container">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">
+              Relatos de quem já trilhou esse caminho
+            </h2>
+            <p class="text-on-surface-variant">
+              O anonimato e o sigilo são sempre preservados em nossa prática.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div
+              class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10"
+            >
+              <div class="flex text-primary mb-6">
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+              </div>
+              <p class="italic text-on-surface-variant mb-6">
+                "Encontrei um espaço onde finalmente me senti ouvida sem
+                julgamentos. As sessões foram fundamentais para eu recuperar
+                minha autoconfiança."
+              </p>
+              <p class="font-semibold text-on-surface">— M.R., 34 anos</p>
+            </div>
+            <!-- Card 2 -->
+            <div
+              class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10 lg:translate-y-6"
+            >
+              <div class="flex text-primary mb-6">
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+              </div>
+              <p class="italic text-on-surface-variant mb-6">
+                "O atendimento online superou minhas expectativas. A conexão e o
+                acolhimento são os mesmos, com a facilidade de estar no conforto
+                da minha casa."
+              </p>
+              <p class="font-semibold text-on-surface">— J.L., 29 anos</p>
+            </div>
+            <!-- Card 3 -->
+            <div
+              class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10"
+            >
+              <div class="flex text-primary mb-6">
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+              </div>
+              <p class="italic text-on-surface-variant mb-6">
+                "Sou muito grata pelo acompanhamento durante minha crise de
+                ansiedade. Hoje consigo identificar meus gatilhos e viver com
+                muito mais leveza."
+              </p>
+              <p class="font-semibold text-on-surface">— A.P., 42 anos</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ -->
+      <section class="py-24 px-6 md:px-10 bg-surface">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-4xl text-center mb-16">Dúvidas Frequentes</h2>
+          <div class="space-y-4">
+            <details
+              class="group bg-surface-container-low rounded-2xl p-6 transition-all"
+            >
+              <summary
+                class="flex justify-between items-center cursor-pointer list-none"
+              >
+                <span class="text-xl font-medium"
+                  >Como funciona a primeira sessão?</span
+                >
+                <span
+                  class="material-symbols-outlined group-open:rotate-180 transition-transform"
+                  >expand_more</span
+                >
+              </summary>
+              <p class="mt-4 text-on-surface-variant leading-relaxed">
+                A primeira sessão é um momento de acolhimento e escuta inicial.
+                Vamos conversar sobre o que te trouxe à terapia e como
+                trabalharemos juntos para alcançar seus objetivos.
+              </p>
+            </details>
+            <details
+              class="group bg-surface-container-low rounded-2xl p-6 transition-all"
+            >
+              <summary
+                class="flex justify-between items-center cursor-pointer list-none"
+              >
+                <span class="text-xl font-medium"
+                  >Qual a duração e frequência das sessões?</span
+                >
+                <span
+                  class="material-symbols-outlined group-open:rotate-180 transition-transform"
+                  >expand_more</span
+                >
+              </summary>
+              <p class="mt-4 text-on-surface-variant leading-relaxed">
+                As sessões têm duração média de 50 minutos. A frequência
+                recomendada geralmente é semanal, mas pode variar conforme a
+                necessidade e o plano terapêutico estabelecido.
+              </p>
+            </details>
+            <details
+              class="group bg-surface-container-low rounded-2xl p-6 transition-all"
+            >
+              <summary
+                class="flex justify-between items-center cursor-pointer list-none"
+              >
+                <span class="text-xl font-medium">Aceita convênio médico?</span>
+                <span
+                  class="material-symbols-outlined group-open:rotate-180 transition-transform"
+                  >expand_more</span
+                >
+              </summary>
+              <p class="mt-4 text-on-surface-variant leading-relaxed">
+                Trabalho com atendimento particular e forneço recibo para
+                solicitação de reembolso junto ao seu plano de saúde. Verifique
+                as condições com sua operadora.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <!-- Localização e Contato -->
+      <section id="contact-section" class="py-24 px-6 md:px-10 bg-surface-container-low">
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start"
+        >
+          <div class="lg:col-span-5">
+            <h2 class="text-4xl mb-8">Vamos conversar?</h2>
+            <p class="text-on-surface-variant mb-10 text-lg">
+              Sinta-se à vontade para entrar em contato para tirar dúvidas ou
+              agendar sua primeira sessão.
+            </p>
+            <div class="space-y-8">
+              <div class="flex items-start gap-6">
+                <div class="bg-primary-container p-3 rounded-xl">
+                  <span class="material-symbols-outlined text-primary"
+                    >location_on</span
+                  >
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg">Endereço</h4>
+                  <p class="text-on-surface-variant">
+                    Av. das Orquídeas, 1234, Sala 501<br />Jardim Botânico, São
+                    Paulo - SP
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-6">
+                <div class="bg-primary-container p-3 rounded-xl">
+                  <span class="material-symbols-outlined text-primary"
+                    >smartphone</span
+                  >
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg">WhatsApp</h4>
+                  <p class="text-on-surface-variant">(11) 98765-4321</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-6">
+                <div class="bg-primary-container p-3 rounded-xl">
+                  <span class="material-symbols-outlined text-primary"
+                    >mail</span
+                  >
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg">E-mail</h4>
+                  <p class="text-on-surface-variant">
+                    contato@editorialpsicologia.com.br
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-7">
+            <div
+              class="rounded-[2.5rem] overflow-hidden shadow-xl h-[450px] relative border-8 border-surface-container-lowest"
+            >
+              <!-- Simplified Map Placeholder using image -->
+              <img
+                alt="Mapa da localização"
+                class="w-full h-full object-cover"
+                data-alt="Stylized top-down city map in soft pastel green and beige tones, clean minimalist layout showing professional district"
+                data-location="São Paulo, Brazil"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0eebcAMsUBeICvdVeydh_-1Vr8WNw6GGFsb5R23J351YgFRMw8EnM317aQI6FsY8KzhRp-Iu3aAy0nMBkVdOvvD_Q7_7pCSI6caQp5d-bJp4CbVfpXc6x5Emu1DDOuGLz_5s18NFK_08Ggrp29eIDiNKTCq_FgUAMUvT2Da2skSOv1sdadJQrGDB19XsyvPKDKDBRAeJuS7wRaLaP3p07PiJPKmXFJkmW_uG_EQefpYqLtPgbwM7puSNuPB7if0J4X3CwbTNd8R0"
+              />
+              <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              >
+                <div class="relative">
+                  <div
+                    class="w-10 h-10 bg-primary rounded-full animate-ping absolute opacity-50"
+                  ></div>
+                  <div
+                    class="w-10 h-10 bg-primary rounded-full relative flex items-center justify-center border-4 border-white shadow-lg"
+                  >
+                    <span
+                      class="material-symbols-outlined text-white text-sm"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >location_on</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full py-12 px-10 bg-[#f6f3ec] dark:bg-[#121412]">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto"
+      >
+        <div
+          class="font-['Noto_Serif'] italic text-lg text-[#383833] dark:text-[#fffcf7]"
+        >
+          Editorial Sanctuary
+        </div>
+        <div class="flex gap-8">
+          <a
+            class="text-[#65655e] dark:text-[#bbb9b2] hover:underline decoration-[#4f6a5e] underline-offset-4 opacity-80 hover:opacity-100 transition-opacity font-['Manrope'] text-sm tracking-wide"
+            href="#"
+            >Privacidade</a
+          >
+          <a
+            class="text-[#65655e] dark:text-[#bbb9b2] hover:underline decoration-[#4f6a5e] underline-offset-4 opacity-80 hover:opacity-100 transition-opacity font-['Manrope'] text-sm tracking-wide"
+            href="#"
+            >Termos de Uso</a
+          >
+          <a
+            class="text-[#65655e] dark:text-[#bbb9b2] hover:underline decoration-[#4f6a5e] underline-offset-4 opacity-80 hover:opacity-100 transition-opacity font-['Manrope'] text-sm tracking-wide"
+            href="#"
+            >Instagram</a
+          >
+          <a
+            class="text-[#65655e] dark:text-[#bbb9b2] hover:underline decoration-[#4f6a5e] underline-offset-4 opacity-80 hover:opacity-100 transition-opacity font-['Manrope'] text-sm tracking-wide"
+            href="#"
+            >LinkedIn</a
+          >
+        </div>
+        <div
+          class="text-[#65655e] dark:text-[#bbb9b2] font-['Manrope'] text-sm tracking-wide"
+        >
+          © 2024 Editorial Sanctuary. Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
