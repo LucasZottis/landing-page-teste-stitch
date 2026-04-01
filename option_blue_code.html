@@ -1,382 +1,647 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html class="light" lang="pt-BR"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Psicólogo(a) Editorial | Encontre seu Equilíbrio</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary-dim": "#375768",
-                        "outline": "#747c80",
-                        "tertiary-container": "#dce3eb",
-                        "outline-variant": "#acb3b7",
-                        "surface-container-low": "#f0f4f7",
-                        "surface-container-lowest": "#ffffff",
-                        "on-primary-container": "#355666",
-                        "tertiary-dim": "#4c545a",
-                        "on-primary-fixed-variant": "#3f6071",
-                        "surface-tint": "#436374",
-                        "on-surface": "#2c3437",
-                        "on-secondary-fixed-variant": "#505e64",
-                        "error": "#a83836",
-                        "inverse-primary": "#c5e7fc",
-                        "tertiary-fixed": "#dce3eb",
-                        "on-tertiary-container": "#4b5359",
-                        "on-secondary-container": "#46545a",
-                        "on-primary-fixed": "#224353",
-                        "on-primary": "#f3faff",
-                        "on-error": "#fff7f6",
-                        "surface-container": "#eaeff2",
-                        "surface-container-high": "#e3e9ed",
-                        "primary-fixed": "#c5e7fc",
-                        "on-secondary": "#f2faff",
-                        "surface-bright": "#f7f9fb",
-                        "secondary-container": "#d7e5ec",
-                        "primary-fixed-dim": "#b8d9ed",
-                        "secondary": "#546167",
-                        "secondary-fixed": "#d7e5ec",
-                        "on-tertiary-fixed": "#384046",
-                        "surface-dim": "#d4dbdf",
-                        "on-surface-variant": "#596064",
-                        "on-tertiary-fixed-variant": "#545d63",
-                        "primary-container": "#c5e7fc",
-                        "surface-variant": "#dce4e8",
-                        "on-secondary-fixed": "#344147",
-                        "background": "#f7f9fb",
-                        "surface-container-highest": "#dce4e8",
-                        "error-dim": "#67040d",
-                        "primary": "#436374",
-                        "secondary-fixed-dim": "#c9d7de",
-                        "on-tertiary": "#f4f9ff",
-                        "on-error-container": "#6e0a12",
-                        "surface": "#f7f9fb",
-                        "error-container": "#fa746f",
-                        "inverse-surface": "#0b0f10",
-                        "tertiary-fixed-dim": "#cdd5dc",
-                        "on-background": "#2c3437",
-                        "inverse-on-surface": "#9a9d9f",
-                        "tertiary": "#586066",
-                        "secondary-dim": "#48555b"
-                    },
-                    fontFamily: {
-                        "headline": ["Noto Serif"],
-                        "body": ["Manrope"],
-                        "label": ["Manrope"]
-                    },
-                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
-                },
+<html class="light" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Psicólogo(a) Editorial | Encontre seu Equilíbrio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;family=Manrope:wght@400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-dim": "#375768",
+              outline: "#747c80",
+              "tertiary-container": "#dce3eb",
+              "outline-variant": "#acb3b7",
+              "surface-container-low": "#f0f4f7",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-container": "#355666",
+              "tertiary-dim": "#4c545a",
+              "on-primary-fixed-variant": "#3f6071",
+              "surface-tint": "#436374",
+              "on-surface": "#2c3437",
+              "on-secondary-fixed-variant": "#505e64",
+              error: "#a83836",
+              "inverse-primary": "#c5e7fc",
+              "tertiary-fixed": "#dce3eb",
+              "on-tertiary-container": "#4b5359",
+              "on-secondary-container": "#46545a",
+              "on-primary-fixed": "#224353",
+              "on-primary": "#f3faff",
+              "on-error": "#fff7f6",
+              "surface-container": "#eaeff2",
+              "surface-container-high": "#e3e9ed",
+              "primary-fixed": "#c5e7fc",
+              "on-secondary": "#f2faff",
+              "surface-bright": "#f7f9fb",
+              "secondary-container": "#d7e5ec",
+              "primary-fixed-dim": "#b8d9ed",
+              secondary: "#546167",
+              "secondary-fixed": "#d7e5ec",
+              "on-tertiary-fixed": "#384046",
+              "surface-dim": "#d4dbdf",
+              "on-surface-variant": "#596064",
+              "on-tertiary-fixed-variant": "#545d63",
+              "primary-container": "#c5e7fc",
+              "surface-variant": "#dce4e8",
+              "on-secondary-fixed": "#344147",
+              background: "#f7f9fb",
+              "surface-container-highest": "#dce4e8",
+              "error-dim": "#67040d",
+              primary: "#436374",
+              "secondary-fixed-dim": "#c9d7de",
+              "on-tertiary": "#f4f9ff",
+              "on-error-container": "#6e0a12",
+              surface: "#f7f9fb",
+              "error-container": "#fa746f",
+              "inverse-surface": "#0b0f10",
+              "tertiary-fixed-dim": "#cdd5dc",
+              "on-background": "#2c3437",
+              "inverse-on-surface": "#9a9d9f",
+              tertiary: "#586066",
+              "secondary-dim": "#48555b",
             },
-        }
+            fontFamily: {
+              headline: ["Noto Serif"],
+              body: ["Manrope"],
+              label: ["Manrope"],
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+          },
+        },
+      };
     </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .editorial-gradient {
-            background: radial-gradient(circle at top right, #c5e7fc 0%, #f7f9fb 70%);
-        }
-        .safe-space-shadow {
-            box-shadow: 0 12px 32px rgba(67, 99, 116, 0.06);
-        }
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .editorial-gradient {
+        background: radial-gradient(
+          circle at top right,
+          #c5e7fc 0%,
+          #f7f9fb 70%
+        );
+      }
+      .safe-space-shadow {
+        box-shadow: 0 12px 32px rgba(67, 99, 116, 0.06);
+      }
     </style>
-</head>
-<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
-<!-- Top Navigation -->
-<nav class="sticky top-0 w-full z-50 bg-[#fffcf7]/80 backdrop-blur-md">
-<div class="flex justify-between items-center px-6 md:px-10 py-6 max-w-7xl mx-auto">
-<span class="font-headline font-semibold text-xl text-primary tracking-tight">Psicólogo(a) Editorial</span>
-<div class="hidden md:flex items-center gap-10">
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-headline text-lg" href="#">Sobre</a>
-<a class="text-secondary hover:text-primary transition-colors font-headline text-lg" href="#">Serviços</a>
-<a class="text-secondary hover:text-primary transition-colors font-headline text-lg" href="#">Contato</a>
-</div>
-<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-medium hover:bg-primary-dim transition-all scale-95 duration-200 ease-in-out active:scale-90">
-                Agendar Consulta
+  </head>
+  <body
+    class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container"
+  >
+    <!-- Top Navigation -->
+    <nav class="sticky top-0 w-full z-50 bg-[#fffcf7]/80 backdrop-blur-md">
+      <div
+        class="flex justify-between items-center px-6 md:px-10 py-6 max-w-7xl mx-auto"
+      >
+        <span
+          class="font-headline font-semibold text-xl text-primary tracking-tight"
+          >Tauana Evaristo Porto</span
+        >
+        <div class="hidden md:flex items-center gap-10">
+           <a
+            class="text-primary border-primary pb-1 font-headline text-lg"
+            href="#home-section"
+            >Início</a
+          >
+          <a
+            class="text-primary border-primary pb-1 font-headline text-lg"
+            href="#about-section"
+            >Sobre</a
+          >
+          <a
+            class="text-secondary hover:text-primary transition-colors font-headline text-lg"
+            href="#services-section"
+            >Serviços</a
+          >
+          <a
+            class="text-secondary hover:text-primary transition-colors font-headline text-lg"
+            href="#contact-section"
+            >Contato</a
+          >
+        </div>
+        <button
+          class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-medium hover:bg-primary-dim transition-all scale-95 duration-200 ease-in-out active:scale-90"
+        >
+          Agendar Consulta
+        </button>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <header id="home-section"
+      class="editorial-gradient pt-16 pb-24 md:pt-32 md:pb-40 px-6 overflow-hidden"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16"
+      >
+        <div class="w-full md:w-1/2 space-y-8">
+          <h1
+            class="font-headline text-5xl md:text-7xl font-bold text-on-surface leading-tight tracking-tight"
+          >
+            Encontre seu <br />
+            <span class="italic font-normal">Equilíbrio Interior</span>
+          </h1>
+          <p class="text-lg md:text-xl text-secondary leading-relaxed max-w-lg">
+            Um espaço seguro para explorar sua jornada emocional através de uma
+            escuta qualificada e acolhedora. Juntos, construiremos caminhos para
+            uma vida com mais sentido e autonomia.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <button
+              class="bg-primary text-on-primary px-8 py-4 rounded-xl font-semibold safe-space-shadow hover:bg-primary-dim transition-all"
+            >
+              Agendar Consulta
             </button>
-</div>
-</nav>
-<!-- Hero Section -->
-<header class="editorial-gradient pt-16 pb-24 md:pt-32 md:pb-40 px-6 overflow-hidden">
-<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
-<div class="w-full md:w-1/2 space-y-8">
-<h1 class="font-headline text-5xl md:text-7xl font-bold text-on-surface leading-tight tracking-tight">
-                    Encontre seu <br/> <span class="italic font-normal">Equilíbrio Interior</span>
-</h1>
-<p class="text-lg md:text-xl text-secondary leading-relaxed max-w-lg">
-                    Um espaço seguro para explorar sua jornada emocional através de uma escuta qualificada e acolhedora. Juntos, construiremos caminhos para uma vida com mais sentido e autonomia.
-                </p>
-<div class="flex flex-col sm:flex-row gap-4 pt-4">
-<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-semibold safe-space-shadow hover:bg-primary-dim transition-all">
-                        Agendar Consulta
-                    </button>
-<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-semibold hover:bg-surface-container-high transition-all">
-                        Conhecer Abordagem
-                    </button>
-</div>
-</div>
-<div class="w-full md:w-1/2 relative">
-<div class="aspect-[4/5] rounded-[2rem] overflow-hidden safe-space-shadow transform md:rotate-2">
-<img class="w-full h-full object-cover" data-alt="a minimalist bright therapy room with soft sunlight streaming through linen curtains, a comfortable fabric armchair, and a small plant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGP2NI6hX9gWoCuoSXwpmJHLu0bhG_7WJ32yfgZwgOhEG3rECq_PrccInCFXRVRsXziLpTkTvEEn6MPvD8EyVv4znb0PqZ5a0ft_kByasswtrWR5gIP3OXY2MfIYbbv_X2Rf5amJuUwtCTZX9vGwANJLlcpBxlCgqhoZ8NE71rBWKMQTCEJFYoe4TXRT_xLuL1cP8VxyatI6FZV0kfXInI0gfOYEV68PCK4RG2Ft1q43cfHlBiednJ9SQw9od1aWRSL2e_s0qLGDk"/>
-</div>
-<div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-2xl safe-space-shadow hidden md:block max-w-xs border-t-2 border-primary-fixed-dim">
-<p class="italic text-on-surface-variant leading-relaxed">
-                        "A terapia não é apenas sobre curar feridas, é sobre florescer em sua própria essência."
-                    </p>
-</div>
-</div>
-</div>
-</header>
-<!-- How Therapy Helps: Bento Grid -->
-<section class="py-24 md:py-40 bg-surface">
-<div class="max-w-7xl mx-auto px-6">
-<div class="mb-20 text-center md:text-left">
-<span class="text-primary font-semibold tracking-widest uppercase text-sm">Cuidado &amp; Bem-estar</span>
-<h2 class="font-headline text-4xl md:text-5xl mt-4 text-on-surface">Como a terapia pode ajudar</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Bento Item 1 -->
-<div class="md:col-span-2 bg-surface-container-low p-10 rounded-3xl flex flex-col justify-between">
-<div>
-<span class="material-symbols-outlined text-primary text-4xl mb-6">self_improvement</span>
-<h3 class="font-headline text-2xl mb-4">Gestão da Ansiedade</h3>
-<p class="text-secondary leading-relaxed max-w-md">
-                            Desenvolva ferramentas práticas para lidar com o estresse cotidiano e encontre um estado de presença mais calmo e focado.
-                        </p>
-</div>
-</div>
-<!-- Bento Item 2 -->
-<div class="bg-surface-container-lowest p-10 rounded-3xl safe-space-shadow border-t-2 border-primary-fixed-dim">
-<span class="material-symbols-outlined text-primary text-4xl mb-6">favorite</span>
-<h3 class="font-headline text-2xl mb-4">Autoestima</h3>
-<p class="text-secondary leading-relaxed">
-                        Reconstrua sua relação consigo mesmo através do autoconhecimento profundo e da autocompaixão.
-                    </p>
-</div>
-<!-- Bento Item 3 -->
-<div class="bg-surface-container-lowest p-10 rounded-3xl safe-space-shadow border-t-2 border-primary-fixed-dim">
-<span class="material-symbols-outlined text-primary text-4xl mb-6">diversity_3</span>
-<h3 class="font-headline text-2xl mb-4">Relacionamentos</h3>
-<p class="text-secondary leading-relaxed">
-                        Melhore a comunicação e estabeleça limites saudáveis em suas conexões interpessoais e familiares.
-                    </p>
-</div>
-<!-- Bento Item 4 -->
-<div class="md:col-span-2 bg-secondary-container/30 p-10 rounded-3xl flex flex-col md:flex-row gap-10 items-center">
-<div class="flex-1">
-<span class="material-symbols-outlined text-primary text-4xl mb-6">psychology</span>
-<h3 class="font-headline text-2xl mb-4">Processos de Luto e Perda</h3>
-<p class="text-secondary leading-relaxed">
-                            Um suporte especializado para atravessar momentos de transição difícil e ressignificar a dor da ausência.
-                        </p>
-</div>
-<div class="w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
-<img class="w-full h-full object-cover grayscale opacity-60" data-alt="soft ocean waves washing over a sandy beach at dawn with a palette of pale blue and grey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqP_A7CAI6x493j6Pv_LZj0cDPkJlVFqKWViKnDoPxRnfi4VqvWommVA1iztzsyqnJE4ryQK0EVTa3gH_Tn4jkznGC47Yetpg_BujyjS5aVUJNydx4mvF3G5WPW3bkWDZF24dM06cZ1z6L7dXYCO4saYvmZj47V8DjPFX0duqYRwHg6nsICcy8FUnwKApSfZ6MNrDAV9v_xbb2r4H4AFZsjKNNRN1qccOuMeKjjMxWb1gcCPdK8wvT454eeRc_jY8Vh8Ty18bDi74"/>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Clinical Approach -->
-<section class="py-24 md:py-40 bg-surface-container relative overflow-hidden">
-<div class="max-w-7xl mx-auto px-6 relative z-10">
-<div class="flex flex-col md:flex-row gap-20 items-center">
-<div class="w-full md:w-1/2">
-<h2 class="font-headline text-4xl md:text-5xl text-on-surface mb-8">Fenomenologia Existencial</h2>
-<p class="text-lg text-secondary leading-relaxed mb-6">
-                        Minha prática é fundamentada na Fenomenologia, uma abordagem que busca compreender a experiência humana a partir do modo como o indivíduo percebe o mundo.
-                    </p>
-<p class="text-lg text-secondary leading-relaxed mb-10">
-                        Não trabalhamos com diagnósticos engessados, mas sim com o resgate da sua liberdade e responsabilidade diante da própria existência. É um convite para olhar para "o que é", sem julgamentos prévios.
-                    </p>
-<ul class="space-y-4">
-<li class="flex gap-4 items-start">
-<span class="material-symbols-outlined text-primary">check_circle</span>
-<span class="text-on-surface">Escuta empática e sem pré-conceitos</span>
-</li>
-<li class="flex gap-4 items-start">
-<span class="material-symbols-outlined text-primary">check_circle</span>
-<span class="text-on-surface">Foco na experiência vivida no aqui-agora</span>
-</li>
-<li class="flex gap-4 items-start">
-<span class="material-symbols-outlined text-primary">check_circle</span>
-<span class="text-on-surface">Resgate da autonomia e sentido de vida</span>
-</li>
-</ul>
-</div>
-<div class="w-full md:w-1/2">
-<div class="bg-surface-container-lowest p-2 rounded-3xl safe-space-shadow rotate-1">
-<img class="w-full rounded-2xl h-[500px] object-cover" data-alt="minimalist abstract art piece with soothing organic shapes in shades of dusty blue and cream" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5LYxEkVF6EBjmRE9zxQBCgos5FrorGiYOr0gaK98KbpSQ8TGBovU60liuVSQdaabtRl9dzR4kUbLfJJTFsuSZH5dPUiSoFUxHVNMGvvK7R9pqLN6mnQqY1W4J0URTJK23SMIHNv-SChfds07QuLgy4Ch54uR5Aajwqv_SUDVr-eC9QSwYTKfKED7gHqNbRlgYUkTD5OJ0mjVrRRYgr-yx_eZl7duZqIZAyySiiog5Gn0q2E-CobHQGvWTrx8Rv0L7bTHcyO_e1rk"/>
-</div>
-</div>
-</div>
-</div>
-<div class="absolute top-0 right-0 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl -mr-48 -mt-48"></div>
-</section>
-<!-- Professional About -->
-<section class="py-24 md:py-40 bg-background">
-<div class="max-w-7xl mx-auto px-6">
-<div class="flex flex-col md:flex-row-reverse gap-20 items-center">
-<div class="w-full md:w-3/5">
-<span class="text-primary font-semibold tracking-widest uppercase text-sm">Sobre mim</span>
-<h2 class="font-headline text-4xl md:text-5xl mt-4 mb-8 text-on-surface">Dra. Mariana Costa</h2>
-<div class="space-y-6 text-lg text-secondary leading-relaxed">
-<p>
-                            Sou psicóloga clínica com mais de 8 anos de experiência no acompanhamento de adultos e jovens em busca de maior clareza emocional. Minha formação acadêmica e prática sempre foi guiada pela ética do cuidado e pelo respeito à singularidade de cada história.
-                        </p>
-<p>
-                            Acredito que o consultório é um laboratório de humanidade, onde o encontro genuíno entre duas pessoas possibilita a transformação e o florescimento.
-                        </p>
-<div class="pt-6 grid grid-cols-2 gap-8">
-<div>
-<h4 class="font-bold text-on-surface font-headline">Formação</h4>
-<p class="text-sm">Especialista em Clínica Fenomenológica pela USP</p>
-</div>
-<div>
-<h4 class="font-bold text-on-surface font-headline">Registro</h4>
-<p class="text-sm">CRP 06/123456</p>
-</div>
-</div>
-</div>
-</div>
-<div class="w-full md:w-2/5">
-<div class="relative group">
-<div class="absolute inset-0 bg-primary-container rounded-[3rem] -rotate-6 transition-transform group-hover:-rotate-3"></div>
-<img class="relative z-10 w-full rounded-[3rem] safe-space-shadow aspect-[4/5] object-cover" data-alt="professional portrait of a smiling female psychologist in a soft blue blazer, natural lighting, serene background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTk0Nxri4jcCA7_HEtKLd7a5INmp5D8PaEmnpEyy86M7nkYYVJJAQw9FzBchdhBHc7MZ5p6cPgDmhB7yc3QaY8WREALFWPsc0PamrVOwx3sfT-0LIYywJihqNkso9scYHjpWAc6n9vtPiOmD7ktRf8bxmguw4MQXCJU9s--KuYHbdeRXxnrXS0sGA6N862bV-jllYjEUfwXTdSjdzuxn9TFTI1qytmCyoah3AqZqXpQ2h6sL3t3ZS2RESAUmTfXAr51VBZ1WMjq7s"/>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Blog/Articles Section -->
-<section class="py-24 md:py-40 bg-surface-container-low">
-<div class="max-w-7xl mx-auto px-6">
-<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-<div>
-<h2 class="font-headline text-4xl md:text-5xl text-on-surface">Reflexões Editorial</h2>
-<p class="text-secondary mt-4 text-lg">Artigos sobre saúde mental e o cotidiano.</p>
-</div>
-<a class="text-primary font-semibold flex items-center gap-2 hover:gap-4 transition-all" href="#">
-                    Ver todos os artigos <span class="material-symbols-outlined">arrow_forward</span>
-</a>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-<!-- Post 1 -->
-<article class="bg-surface-container-lowest rounded-3xl overflow-hidden safe-space-shadow flex flex-col">
-<div class="h-64 overflow-hidden">
-<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="minimalist wooden desk with a lamp, a notebook, and a coffee mug in morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARiSIqD1AgvhG-RhbKssTsNFn1qPnnOyARyo1qmd3VZgwesoGmvXkK8w5lSU4Xe3ppux-4foGHsKFM-lXyXfAdSU76bZCJNsbTKh_fB7AJvqKI5jS_fyNr5gl9XT_84yowYXtIUUQ05FNmrkCzuRa_eAlR_eP6AdZ38UJGx6wjbTGnedgdk1tunScr14vWKFfSvYwQH2gXu1Qd_XQi9mGC_D_pynF0scDlP4pMahjq1bJ_MW_4-pSjpeixMCzkYUceH3t8CtNyxqc"/>
-</div>
-<div class="p-8 flex-1 flex flex-col">
-<span class="text-primary-dim text-xs font-semibold tracking-widest uppercase mb-3">Autoconhecimento</span>
-<h3 class="font-headline text-xl mb-4 text-on-surface">O silêncio como ferramenta de cura</h3>
-<p class="text-secondary text-sm leading-relaxed mb-6 flex-1">
-                            Como a pausa intencional pode nos ajudar a ouvir o que o barulho do dia a dia tenta esconder.
-                        </p>
-<span class="text-outline-variant text-xs">5 min de leitura</span>
-</div>
-</article>
-<!-- Post 2 -->
-<article class="bg-surface-container-lowest rounded-3xl overflow-hidden safe-space-shadow flex flex-col">
-<div class="h-64 overflow-hidden">
-<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="raindrops on a glass window with a blurred garden background in shades of green and blue" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAG-L0uAmZuWX_nsbSmyw3gnBKTEmCZkDY_020x883n-tACCYzYjgELkiSC_uUxUtIrnkQSFH22150FGdVIYjAy5Q24hkoYM0s37x0ZkQ1ahX1XVkDTgNnIWrV6QmMG3OrcGj5daIIadn33AXsrnvAIF526tGiUimiKABE6FPt3m6gtNKaP2zDcOve2S816HAheihzzXTchec59veTFcKhO0QTPYMG7zw4uNUv4Tox_xB9WzHu8cdVNd6-wRHAfWXIwDtYGqGf2p0"/>
-</div>
-<div class="p-8 flex-1 flex flex-col">
-<span class="text-primary-dim text-xs font-semibold tracking-widest uppercase mb-3">Ansiedade</span>
-<h3 class="font-headline text-xl mb-4 text-on-surface">Navegando em dias nublados</h3>
-<p class="text-secondary text-sm leading-relaxed mb-6 flex-1">
-                            Dicas práticas e reflexões para lidar com a sobrecarga emocional e a ansiedade persistente.
-                        </p>
-<span class="text-outline-variant text-xs">8 min de leitura</span>
-</div>
-</article>
-<!-- Post 3 -->
-<article class="bg-surface-container-lowest rounded-3xl overflow-hidden safe-space-shadow flex flex-col">
-<div class="h-64 overflow-hidden">
-<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="open book on a soft white bedspread with morning shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHC7JQMoNY8xZUYJhq4A3gDVIAaKavOgHlDYhZsItbtxTyMZKZfcOpod4V4eObOZB5PIG1HSyQAPhH13ZSp2nGhMelmt3GGbY5Im8oB3HfOuycnz4vPYkeuDOG5GFSFUmYQ0kjb-IMD6KKXgQoVYOq8Hx0-DcjGo8j-UnK0YK9DE2s236-81orChcRicD6KrGosKRnO5FJPu7tgJs8CZup17QK8Vocz2Hz-xY7VNgLJAHEg8a7iilW8lM3pa5Al8iZBtnNlUeSZyA"/>
-</div>
-<div class="p-8 flex-1 flex flex-col">
-<span class="text-primary-dim text-xs font-semibold tracking-widest uppercase mb-3">Relacionamentos</span>
-<h3 class="font-headline text-xl mb-4 text-on-surface">A arte de impor limites</h3>
-<p class="text-secondary text-sm leading-relaxed mb-6 flex-1">
-                            Por que dizer 'não' é, muitas vezes, o maior gesto de amor que podemos ter por nós e pelos outros.
-                        </p>
-<span class="text-outline-variant text-xs">6 min de leitura</span>
-</div>
-</article>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer class="bg-[#f6f3ec] pt-24 pb-12 px-6 md:px-10">
-<div class="max-w-7xl mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
-<div class="md:col-span-1">
-<span class="font-headline italic text-2xl text-on-surface mb-6 block">Editorial Sanctuary</span>
-<p class="text-secondary text-sm leading-relaxed">
-                        Um refúgio digital e presencial dedicado ao cuidado da mente e do espírito. 
-                    </p>
-<div class="mt-6">
-<p class="text-xs font-bold text-on-surface uppercase tracking-widest mb-1">Registro Profissional</p>
-<p class="text-sm text-secondary">CRP 06/123456 • CRM 987654</p>
-</div>
-</div>
-<div>
-<h4 class="font-headline font-bold text-on-surface mb-6">Navegação</h4>
-<ul class="space-y-4 text-sm text-secondary">
-<li><a class="hover:underline decoration-primary underline-offset-4 transition-all" href="#">Sobre a profissional</a></li>
-<li><a class="hover:underline decoration-primary underline-offset-4 transition-all" href="#">Abordagem Clínica</a></li>
-<li><a class="hover:underline decoration-primary underline-offset-4 transition-all" href="#">Serviços &amp; Consultas</a></li>
-<li><a class="hover:underline decoration-primary underline-offset-4 transition-all" href="#">Blog de Reflexões</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-headline font-bold text-on-surface mb-6">Contato</h4>
-<ul class="space-y-4 text-sm text-secondary">
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary text-lg">mail</span>
-                            contato@editorialpsico.com.br
-                        </li>
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary text-lg">call</span>
-                            +55 (11) 99999-9999
-                        </li>
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary text-lg">location_on</span>
-                            Av. Paulista, 1000 - São Paulo, SP
-                        </li>
-</ul>
-</div>
-<div>
-<h4 class="font-headline font-bold text-on-surface mb-6">Social</h4>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
-<span class="material-symbols-outlined">share</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
-<span class="material-symbols-outlined">camera</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
-<span class="material-symbols-outlined">chat_bubble</span>
-</a>
-</div>
-</div>
-</div>
-<div class="border-t border-outline-variant/10 pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-outline font-body tracking-wide">
-<p>© 2024 Editorial Sanctuary. Todos os direitos reservados.</p>
-<div class="flex gap-8">
-<a class="hover:text-primary transition-colors" href="#">Privacidade</a>
-<a class="hover:text-primary transition-colors" href="#">Termos de Uso</a>
-<a class="hover:text-primary transition-colors" href="#">Instagram</a>
-<a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
-</div>
-</div>
-</div>
-</footer>
-</body></html>
+            <button
+              class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-semibold hover:bg-surface-container-high transition-all"
+            >
+              Conhecer Abordagem
+            </button>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 relative">
+          <div
+            class="aspect-[4/5] rounded-[2rem] overflow-hidden safe-space-shadow transform md:rotate-2"
+          >
+            <img
+              class="w-full h-full object-cover"
+              data-alt="a minimalist bright therapy room with soft sunlight streaming through linen curtains, a comfortable fabric armchair, and a small plant"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGP2NI6hX9gWoCuoSXwpmJHLu0bhG_7WJ32yfgZwgOhEG3rECq_PrccInCFXRVRsXziLpTkTvEEn6MPvD8EyVv4znb0PqZ5a0ft_kByasswtrWR5gIP3OXY2MfIYbbv_X2Rf5amJuUwtCTZX9vGwANJLlcpBxlCgqhoZ8NE71rBWKMQTCEJFYoe4TXRT_xLuL1cP8VxyatI6FZV0kfXInI0gfOYEV68PCK4RG2Ft1q43cfHlBiednJ9SQw9od1aWRSL2e_s0qLGDk"
+            />
+          </div>
+          <div
+            class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-2xl safe-space-shadow hidden md:block max-w-xs border-t-2 border-primary-fixed-dim"
+          >
+            <p class="italic text-on-surface-variant leading-relaxed">
+              "A terapia não é apenas sobre curar feridas, é sobre florescer em
+              sua própria essência."
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- How Therapy Helps: Bento Grid -->
+    <section id="services-section"  class="py-24 md:py-40 bg-surface">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-20 text-center md:text-left">
+          <span
+            class="text-primary font-semibold tracking-widest uppercase text-sm"
+            >Cuidado &amp; Bem-estar</span
+          >
+          <h2 class="font-headline text-4xl md:text-5xl mt-4 text-on-surface">
+            Como a terapia pode ajudar
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Bento Item 1 -->
+          <div
+            class="md:col-span-2 bg-surface-container-low p-10 rounded-3xl flex flex-col justify-between"
+          >
+            <div>
+              <span class="material-symbols-outlined text-primary text-4xl mb-6"
+                >self_improvement</span
+              >
+              <h3 class="font-headline text-2xl mb-4">Gestão da Ansiedade</h3>
+              <p class="text-secondary leading-relaxed max-w-md">
+                Desenvolva ferramentas práticas para lidar com o estresse
+                cotidiano e encontre um estado de presença mais calmo e focado.
+              </p>
+            </div>
+          </div>
+          <!-- Bento Item 2 -->
+          <div
+            class="bg-surface-container-lowest p-10 rounded-3xl safe-space-shadow border-t-2 border-primary-fixed-dim"
+          >
+            <span class="material-symbols-outlined text-primary text-4xl mb-6"
+              >favorite</span
+            >
+            <h3 class="font-headline text-2xl mb-4">Autoestima</h3>
+            <p class="text-secondary leading-relaxed">
+              Reconstrua sua relação consigo mesmo através do autoconhecimento
+              profundo e da autocompaixão.
+            </p>
+          </div>
+          <!-- Bento Item 3 -->
+          <div
+            class="bg-surface-container-lowest p-10 rounded-3xl safe-space-shadow border-t-2 border-primary-fixed-dim"
+          >
+            <span class="material-symbols-outlined text-primary text-4xl mb-6"
+              >diversity_3</span
+            >
+            <h3 class="font-headline text-2xl mb-4">Relacionamentos</h3>
+            <p class="text-secondary leading-relaxed">
+              Melhore a comunicação e estabeleça limites saudáveis em suas
+              conexões interpessoais e familiares.
+            </p>
+          </div>
+          <!-- Bento Item 4 -->
+          <div
+            class="md:col-span-2 bg-secondary-container/30 p-10 rounded-3xl flex flex-col md:flex-row gap-10 items-center"
+          >
+            <div class="flex-1">
+              <span class="material-symbols-outlined text-primary text-4xl mb-6"
+                >psychology</span
+              >
+              <h3 class="font-headline text-2xl mb-4">
+                Processos de Luto e Perda
+              </h3>
+              <p class="text-secondary leading-relaxed">
+                Um suporte especializado para atravessar momentos de transição
+                difícil e ressignificar a dor da ausência.
+              </p>
+            </div>
+            <div
+              class="w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden"
+            >
+              <img
+                class="w-full h-full object-cover grayscale opacity-60"
+                data-alt="soft ocean waves washing over a sandy beach at dawn with a palette of pale blue and grey"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqP_A7CAI6x493j6Pv_LZj0cDPkJlVFqKWViKnDoPxRnfi4VqvWommVA1iztzsyqnJE4ryQK0EVTa3gH_Tn4jkznGC47Yetpg_BujyjS5aVUJNydx4mvF3G5WPW3bkWDZF24dM06cZ1z6L7dXYCO4saYvmZj47V8DjPFX0duqYRwHg6nsICcy8FUnwKApSfZ6MNrDAV9v_xbb2r4H4AFZsjKNNRN1qccOuMeKjjMxWb1gcCPdK8wvT454eeRc_jY8Vh8Ty18bDi74"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Clinical Approach -->
+    <section 
+      class="py-24 md:py-40 bg-surface-container relative overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="flex flex-col md:flex-row gap-20 items-center">
+          <div class="w-full md:w-1/2">
+            <h2 class="font-headline text-4xl md:text-5xl text-on-surface mb-8">
+              Fenomenologia Existencial
+            </h2>
+            <p class="text-lg text-secondary leading-relaxed mb-6">
+              Minha prática é fundamentada na Fenomenologia, uma abordagem que
+              busca compreender a experiência humana a partir do modo como o
+              indivíduo percebe o mundo.
+            </p>
+            <p class="text-lg text-secondary leading-relaxed mb-10">
+              Não trabalhamos com diagnósticos engessados, mas sim com o resgate
+              da sua liberdade e responsabilidade diante da própria existência.
+              É um convite para olhar para "o que é", sem julgamentos prévios.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex gap-4 items-start">
+                <span class="material-symbols-outlined text-primary"
+                  >check_circle</span
+                >
+                <span class="text-on-surface"
+                  >Escuta empática e sem pré-conceitos</span
+                >
+              </li>
+              <li class="flex gap-4 items-start">
+                <span class="material-symbols-outlined text-primary"
+                  >check_circle</span
+                >
+                <span class="text-on-surface"
+                  >Foco na experiência vivida no aqui-agora</span
+                >
+              </li>
+              <li class="flex gap-4 items-start">
+                <span class="material-symbols-outlined text-primary"
+                  >check_circle</span
+                >
+                <span class="text-on-surface"
+                  >Resgate da autonomia e sentido de vida</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/2">
+            <div
+              class="bg-surface-container-lowest p-2 rounded-3xl safe-space-shadow rotate-1"
+            >
+              <img
+                class="w-full rounded-2xl h-[500px] object-cover"
+                data-alt="minimalist abstract art piece with soothing organic shapes in shades of dusty blue and cream"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5LYxEkVF6EBjmRE9zxQBCgos5FrorGiYOr0gaK98KbpSQ8TGBovU60liuVSQdaabtRl9dzR4kUbLfJJTFsuSZH5dPUiSoFUxHVNMGvvK7R9pqLN6mnQqY1W4J0URTJK23SMIHNv-SChfds07QuLgy4Ch54uR5Aajwqv_SUDVr-eC9QSwYTKfKED7gHqNbRlgYUkTD5OJ0mjVrRRYgr-yx_eZl7duZqIZAyySiiog5Gn0q2E-CobHQGvWTrx8Rv0L7bTHcyO_e1rk"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute top-0 right-0 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl -mr-48 -mt-48"
+      ></div>
+    </section>
+    <!-- Professional About -->
+    <section id="about-section" class="py-24 md:py-40 bg-background">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row-reverse gap-20 items-center">
+          <div class="w-full md:w-3/5">
+            <span
+              class="text-primary font-semibold tracking-widest uppercase text-sm"
+              >Sobre mim</span
+            >
+            <h2
+              class="font-headline text-4xl md:text-5xl mt-4 mb-8 text-on-surface"
+            >
+              Dra. Mariana Costa
+            </h2>
+            <div class="space-y-6 text-lg text-secondary leading-relaxed">
+              <p>
+                Sou psicóloga clínica com mais de 8 anos de experiência no
+                acompanhamento de adultos e jovens em busca de maior clareza
+                emocional. Minha formação acadêmica e prática sempre foi guiada
+                pela ética do cuidado e pelo respeito à singularidade de cada
+                história.
+              </p>
+              <p>
+                Acredito que o consultório é um laboratório de humanidade, onde
+                o encontro genuíno entre duas pessoas possibilita a
+                transformação e o florescimento.
+              </p>
+              <div class="pt-6 grid grid-cols-2 gap-8">
+                <div>
+                  <h4 class="font-bold text-on-surface font-headline">
+                    Formação
+                  </h4>
+                  <p class="text-sm">
+                    Especialista em Clínica Fenomenológica pela USP
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-bold text-on-surface font-headline">
+                    Registro
+                  </h4>
+                  <p class="text-sm">CRP 06/123456</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-2/5">
+            <div class="relative group">
+              <div
+                class="absolute inset-0 bg-primary-container rounded-[3rem] -rotate-6 transition-transform group-hover:-rotate-3"
+              ></div>
+              <img
+                class="relative z-10 w-full rounded-[3rem] safe-space-shadow aspect-[4/5] object-cover"
+                data-alt="professional portrait of a smiling female psychologist in a soft blue blazer, natural lighting, serene background"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTk0Nxri4jcCA7_HEtKLd7a5INmp5D8PaEmnpEyy86M7nkYYVJJAQw9FzBchdhBHc7MZ5p6cPgDmhB7yc3QaY8WREALFWPsc0PamrVOwx3sfT-0LIYywJihqNkso9scYHjpWAc6n9vtPiOmD7ktRf8bxmguw4MQXCJU9s--KuYHbdeRXxnrXS0sGA6N862bV-jllYjEUfwXTdSjdzuxn9TFTI1qytmCyoah3AqZqXpQ2h6sL3t3ZS2RESAUmTfXAr51VBZ1WMjq7s"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog/Articles Section -->
+    <section class="py-24 md:py-40 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
+        >
+          <div>
+            <h2 class="font-headline text-4xl md:text-5xl text-on-surface">
+              Reflexões Editorial
+            </h2>
+            <p class="text-secondary mt-4 text-lg">
+              Artigos sobre saúde mental e o cotidiano.
+            </p>
+          </div>
+          <a
+            class="text-primary font-semibold flex items-center gap-2 hover:gap-4 transition-all"
+            href="#"
+          >
+            Ver todos os artigos
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <!-- Post 1 -->
+          <article
+            class="bg-surface-container-lowest rounded-3xl overflow-hidden safe-space-shadow flex flex-col"
+          >
+            <div class="h-64 overflow-hidden">
+              <img
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                data-alt="minimalist wooden desk with a lamp, a notebook, and a coffee mug in morning light"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuARiSIqD1AgvhG-RhbKssTsNFn1qPnnOyARyo1qmd3VZgwesoGmvXkK8w5lSU4Xe3ppux-4foGHsKFM-lXyXfAdSU76bZCJNsbTKh_fB7AJvqKI5jS_fyNr5gl9XT_84yowYXtIUUQ05FNmrkCzuRa_eAlR_eP6AdZ38UJGx6wjbTGnedgdk1tunScr14vWKFfSvYwQH2gXu1Qd_XQi9mGC_D_pynF0scDlP4pMahjq1bJ_MW_4-pSjpeixMCzkYUceH3t8CtNyxqc"
+              />
+            </div>
+            <div class="p-8 flex-1 flex flex-col">
+              <span
+                class="text-primary-dim text-xs font-semibold tracking-widest uppercase mb-3"
+                >Autoconhecimento</span
+              >
+              <h3 class="font-headline text-xl mb-4 text-on-surface">
+                O silêncio como ferramenta de cura
+              </h3>
+              <p class="text-secondary text-sm leading-relaxed mb-6 flex-1">
+                Como a pausa intencional pode nos ajudar a ouvir o que o barulho
+                do dia a dia tenta esconder.
+              </p>
+              <span class="text-outline-variant text-xs">5 min de leitura</span>
+            </div>
+          </article>
+          <!-- Post 2 -->
+          <article
+            class="bg-surface-container-lowest rounded-3xl overflow-hidden safe-space-shadow flex flex-col"
+          >
+            <div class="h-64 overflow-hidden">
+              <img
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                data-alt="raindrops on a glass window with a blurred garden background in shades of green and blue"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAG-L0uAmZuWX_nsbSmyw3gnBKTEmCZkDY_020x883n-tACCYzYjgELkiSC_uUxUtIrnkQSFH22150FGdVIYjAy5Q24hkoYM0s37x0ZkQ1ahX1XVkDTgNnIWrV6QmMG3OrcGj5daIIadn33AXsrnvAIF526tGiUimiKABE6FPt3m6gtNKaP2zDcOve2S816HAheihzzXTchec59veTFcKhO0QTPYMG7zw4uNUv4Tox_xB9WzHu8cdVNd6-wRHAfWXIwDtYGqGf2p0"
+              />
+            </div>
+            <div class="p-8 flex-1 flex flex-col">
+              <span
+                class="text-primary-dim text-xs font-semibold tracking-widest uppercase mb-3"
+                >Ansiedade</span
+              >
+              <h3 class="font-headline text-xl mb-4 text-on-surface">
+                Navegando em dias nublados
+              </h3>
+              <p class="text-secondary text-sm leading-relaxed mb-6 flex-1">
+                Dicas práticas e reflexões para lidar com a sobrecarga emocional
+                e a ansiedade persistente.
+              </p>
+              <span class="text-outline-variant text-xs">8 min de leitura</span>
+            </div>
+          </article>
+          <!-- Post 3 -->
+          <article
+            class="bg-surface-container-lowest rounded-3xl overflow-hidden safe-space-shadow flex flex-col"
+          >
+            <div class="h-64 overflow-hidden">
+              <img
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                data-alt="open book on a soft white bedspread with morning shadows"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHC7JQMoNY8xZUYJhq4A3gDVIAaKavOgHlDYhZsItbtxTyMZKZfcOpod4V4eObOZB5PIG1HSyQAPhH13ZSp2nGhMelmt3GGbY5Im8oB3HfOuycnz4vPYkeuDOG5GFSFUmYQ0kjb-IMD6KKXgQoVYOq8Hx0-DcjGo8j-UnK0YK9DE2s236-81orChcRicD6KrGosKRnO5FJPu7tgJs8CZup17QK8Vocz2Hz-xY7VNgLJAHEg8a7iilW8lM3pa5Al8iZBtnNlUeSZyA"
+              />
+            </div>
+            <div class="p-8 flex-1 flex flex-col">
+              <span
+                class="text-primary-dim text-xs font-semibold tracking-widest uppercase mb-3"
+                >Relacionamentos</span
+              >
+              <h3 class="font-headline text-xl mb-4 text-on-surface">
+                A arte de impor limites
+              </h3>
+              <p class="text-secondary text-sm leading-relaxed mb-6 flex-1">
+                Por que dizer 'não' é, muitas vezes, o maior gesto de amor que
+                podemos ter por nós e pelos outros.
+              </p>
+              <span class="text-outline-variant text-xs">6 min de leitura</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="contact-section" class="bg-[#f6f3ec] pt-24 pb-12 px-6 md:px-10">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+          <div class="md:col-span-1">
+            <span
+              class="font-headline italic text-2xl text-on-surface mb-6 block"
+              >Editorial Sanctuary</span
+            >
+            <p class="text-secondary text-sm leading-relaxed">
+              Um refúgio digital e presencial dedicado ao cuidado da mente e do
+              espírito.
+            </p>
+            <div class="mt-6">
+              <p
+                class="text-xs font-bold text-on-surface uppercase tracking-widest mb-1"
+              >
+                Registro Profissional
+              </p>
+              <p class="text-sm text-secondary">CRP 06/123456 • CRM 987654</p>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-headline font-bold text-on-surface mb-6">
+              Navegação
+            </h4>
+            <ul class="space-y-4 text-sm text-secondary">
+              <li>
+                <a
+                  class="hover:underline decoration-primary underline-offset-4 transition-all"
+                  href="#"
+                  >Sobre a profissional</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:underline decoration-primary underline-offset-4 transition-all"
+                  href="#"
+                  >Abordagem Clínica</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:underline decoration-primary underline-offset-4 transition-all"
+                  href="#"
+                  >Serviços &amp; Consultas</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:underline decoration-primary underline-offset-4 transition-all"
+                  href="#"
+                  >Blog de Reflexões</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-headline font-bold text-on-surface mb-6">
+              Contato
+            </h4>
+            <ul class="space-y-4 text-sm text-secondary">
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary text-lg"
+                  >mail</span
+                >
+                contato@editorialpsico.com.br
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary text-lg"
+                  >call</span
+                >
+                +55 (11) 99999-9999
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary text-lg"
+                  >location_on</span
+                >
+                Av. Paulista, 1000 - São Paulo, SP
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-headline font-bold text-on-surface mb-6">Social</h4>
+            <div class="flex gap-4">
+              <a
+                class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all"
+                href="#"
+              >
+                <span class="material-symbols-outlined">share</span>
+              </a>
+              <a
+                class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all"
+                href="#"
+              >
+                <span class="material-symbols-outlined">camera</span>
+              </a>
+              <a
+                class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all"
+                href="#"
+              >
+                <span class="material-symbols-outlined">chat_bubble</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-outline-variant/10 pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-outline font-body tracking-wide"
+        >
+          <p>© 2024 Editorial Sanctuary. Todos os direitos reservados.</p>
+          <div class="flex gap-8">
+            <a class="hover:text-primary transition-colors" href="#"
+              >Privacidade</a
+            >
+            <a class="hover:text-primary transition-colors" href="#"
+              >Termos de Uso</a
+            >
+            <a class="hover:text-primary transition-colors" href="#"
+              >Instagram</a
+            >
+            <a class="hover:text-primary transition-colors" href="#"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
